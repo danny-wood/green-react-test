@@ -1,3 +1,7 @@
+import Checkbox from "../common/Checkbox";
+import Button from "../common/Button";
+import TextInput from "../common/TextInput";
+
 function Login() {
   const handleFormSubmit = () => {
     console.log("Submit form");
@@ -13,22 +17,15 @@ function Login() {
       <h1 className="mb-5">Operations studio</h1>
       <p>Please enter your email below</p>
       <form onSubmit={handleFormSubmit} className="mt-40">
-        <label htmlFor="email" className="mb-10">
-          Email Address
-        </label>
-        <input
+        <TextInput
           id="email"
           type="email"
-          className="mb-10 form-control"
-          required
+          label="Email Address"
+          isRequired={true}
+          className="mb-10"
         />
-        <div className="mb-50 remember-me">
-          <input id="remember" type="checkbox" className="custom-checkbox" />
-          <label htmlFor="remember">Remember this device</label>
-        </div>
-        <button type="submit" className="primary-button">
-          Sign In
-        </button>
+        <Checkbox id="remember" text="Remember this device" className="mb-50" />
+        <Button type="submit">Sign In</Button>
       </form>
     </div>
   );
