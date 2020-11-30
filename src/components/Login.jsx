@@ -8,6 +8,7 @@ function Login() {
       <img
         src="https://green.cdn.energy/branding/logo-r.svg"
         className="logo mb-40"
+        alt="green"
       />
       <h1 className="mb-5">Operations studio</h1>
       <p>Please enter your email below</p>
