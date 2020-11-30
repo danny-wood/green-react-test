@@ -64,7 +64,24 @@ label {
 }
 
 .custom-checkbox {
-  width: 20px;
-  transform: scale(1.5);
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
   cursor: pointer;
+  appearance: none;
+  border: 2px solid $grey_000;
+  outline: none;
+
+  &:checked {
+    background: url(../../assets/tick.png) no-repeat center center $blue;
+    background-size: 15px 11px;
+
+    //TODO: switch the checkbox tick to use an icon referenced in a font file,
+    //TODO: this can either be done using a service like font awesome, or by generating a
+    //TODO: custom icon set from svg files using icomoon.io
+    // &:after {
+    //   content: "\2713";
+    //   color: $white;
+    // }
+  }
 }
