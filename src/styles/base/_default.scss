@@ -64,7 +64,8 @@ label {
 }
 
 .custom-checkbox-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25px auto;
   align-items: center;
 
   input {
@@ -95,5 +96,6 @@ label {
     font-size: 1.1rem;
     margin-left: 10px;
     cursor: pointer;
+    line-height: 1;
   }
 }
