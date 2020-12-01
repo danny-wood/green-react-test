@@ -7,7 +7,7 @@ React test for green, deployed to Netlify: [green-react-test.netlify.app](https:
 ## Site Structure
 
 - assets - contains custom fonts and image assets.
-- components - contains a 'common' folder for components used. throughout the application and a 'ui' folder for sections of pages such as a login form.
+- components - contains a 'common' folder for components used throughout the application and a 'ui' folder for sections of pages such as a login form.
 - hooks - contains any custom hooks, currently we have a custom 'useInput' hook.
 - styles - contains all sass files, broke down into a 'base' or 'ui' folder. In 'base' we have default, fonts, utils and variables. In 'ui' we have styling for the login form.
 
