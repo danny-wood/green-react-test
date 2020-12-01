@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-function Checkbox({ id, text, className }) {
+function Checkbox({ id, text, className, ...rest }) {
   return (
     <div className={`custom-checkbox-container ${className}`}>
-      <input id={id} type="checkbox" />
+      <input id={id} type="checkbox" {...rest} />
       <label htmlFor={id}>{text}</label>
     </div>
   );
