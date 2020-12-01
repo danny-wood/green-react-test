@@ -64,9 +64,6 @@ label {
 }
 
 .custom-checkbox-container {
-  display: grid;
-  grid-template-columns: 25px auto;
-
   input {
     width: 25px;
     height: 25px;
@@ -75,6 +72,7 @@ label {
     appearance: none;
     border: 2px solid $grey_000;
     outline: none;
+    float: left;
 
     &:checked {
       background: url(../../assets/images/tick.png) no-repeat center center
@@ -97,5 +95,6 @@ label {
     cursor: pointer;
     line-height: 1;
     margin-top: 4px;
+    float: left;
   }
 }
